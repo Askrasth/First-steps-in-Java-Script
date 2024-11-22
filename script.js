@@ -1,44 +1,89 @@
-alert('this is a js sintax');
+let x = 2;
+let y = 4 ;
 
-alert(' this is a java script page')
+let soma = x + y 
 
-document.getElementById('sec1').innerHTML="The <i>Java Script</i> is an interresting <b>Programing language</b> to learn";
+console.log(soma)
 
-document.getElementById('sec2').innerHTML="We could say that, <i> Html, Css </i> and <i> Java script</i> are the <b> Big power trio </b> of <b> Front - end </b> web development.";
+document.write(soma)
 
+document.getElementById('result').innerHTML=soma;
 
+//alert(soma)
 
-console.log("this is another output of information with js")
+// so as we can se at each of them is will come the result just by writting the variable name's. 
 
+let candidatos = 18
 
-let age = 18
-if (age >= 18){
-console.log('you are an adult')
+if (candidatos >= 20){
+    document.getElementById('text').innerHTML='numero suficiente para haver curso'
 }else{
-    console.log('you are an adolescent');
+    document.getElementById('text').innerHTML='numero insuficiente para haver curso'
+}
+// let's try other situations that we can use if else. 
+
+
+let idade = 18 
+
+if (idade >= 20){
+    document.getElementById('text2').innerHTML='pode tirar carteira de motorista'
+}else{
+    document.getElementById('text2').innerHTML='carteira negada'
 }
 
 
-let note = 95
+let recipiente = 75 // porcento
 
-if (note >= 60 ){
-    console.log('You are approved')
+if (recipiente >= 100){
+    document.getElementById('text3').innerHTML='recipiente cheio'
+} else {
+    document.getElementById('text3').innerHTML='recipiente vazio'
+}
+
+// let's learn else if
+
+let nota = 10
+
+if (nota > 8){
+    document.getElementById('text4').innerHTML='aprovado'
+} else if(nota >= 5) {
+     document.getElementById('text4').innerHTML='recuperação'
 }else{
-    console.log('You were rejected')
+     document.getElementById('text4').innerHTML='reprovado'
 }
 
 
-document.write('did i get it ?')
+// else if is easy. You just need to add one more code line. 
 
-alert('VICTOOOOOOOOOOOORY AND GLORY WE SHALL CELEBRATE')
+let termino = 1049 // 10:50
 
-document.write(' Finally i learned how to use <i> document.write</i>! Now i know it was the letter <b> W </b> which was my challenge at this code line. The w must be <u> simple </u> and not as <u> capslock.</u>  ')
+if(termino <= 1050){
+     document.getElementById('text5').innerHTML='Terminou rapido'
+} else if (termino  <1055) {
+     document.getElementById('text5').innerHTML='terminou em tempo'
+}else if (termino  < 1059){
+     document.getElementById('text5').innerHTML='terminou um pouco atrasado'
+}
+else if (termino < 1105){
+    document.getElementById('text5').innerHTML='terminou  atrasado'
+}
+else{
+    document.getElementById('text5').innerHTML='desconsiderado'
+}
 
-document.write(' So, these are the four forms of outputting information: <u> alert, console.log, document.getElementById </u> and <u> documet.write</u>')
+// coding is easy. here in this else if sintax what we can see is. if i finish before 10:50 i've finished fast. If i finish before 10:55 i finished on time. and that's goes on. the same to the next lines. in this case is a less nad less else if case. Practice more of this type ones. 
 
-document.write(' thats just the begining of my js journey.')
 
-document.write(' i liked this so much that im using this sintax a lot.')
+/*let band = "slayer"
 
-document.getElementById('sec3').innerHTML="Coding is not hard. Just face the challenges and overcome it. Each code line mastered and each challenge passed is a new level and a new step ahead. Lets go bro to the end on this journey.";
-
+if (band = 'metallica'){
+    document.write('Popular')
+} else if ( band = 'megadeth'){
+    document.write('angry')
+} else if (band = 'slayer'){
+    document.write('brutal')
+}else if (band = 'anthrax'){
+    document.write('happy')
+}
+*/ 
+// solve this tomorrow 
